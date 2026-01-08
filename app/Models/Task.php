@@ -57,6 +57,26 @@ class Task extends Model
     }
 
     /**
+     * Get the assignedUser that owns the Task
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function assignedUser(): BelongsTo
+    {
+        return $this->belongsTo(User::class, 'assigned_user_id');
+    }
+
+    /**
+     * Get the project that owns the Task
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function project(): BelongsTo
+    {
+        return $this->belongsTo(Project::class);
+    }
+
+    /**
      * Get all of the projects for the Task
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
