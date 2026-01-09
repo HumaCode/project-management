@@ -3,6 +3,7 @@
 namespace App\Filament\Widgets;
 
 use App\Models\Project;
+use BezhanSalleh\FilamentShield\Traits\HasWidgetShield;
 use Filament\Actions\BulkActionGroup;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
@@ -12,6 +13,8 @@ use Illuminate\Database\Eloquent\Builder;
 
 class RecentProjects extends TableWidget
 {
+    use HasWidgetShield;
+
     protected int | string | array $columnSpan = 'full';
 
     protected static ?int  $sort = 1;
