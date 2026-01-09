@@ -1,3 +1,9 @@
+<img width="1364" height="656" alt="image" src="https://github.com/user-attachments/assets/612af1ae-508d-46a3-a135-90587d7d136e" />
+
+filament Shield
+php artisan shield:super-admin
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
